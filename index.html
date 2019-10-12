@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Mīkla</title>
+  </head>
+  <body>
+   <div id="uzd">
+       <h2>Atrisini krustvārdu mīklu</h2>
+   </div>   
+    <div>
+        <div id="vviens"></div>
+        <div id="viens">
+    1. <input  class="buttons002" desabled="desabled" id="names0011" 
+    maxlength="1"><input  class="buttons002" desabled="desabled" id="names0012" 
+    maxlength="1"><input  class="buttons002" desabled="desabled" id="names0013" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0014" 
+    maxlength="1"><br>2. <input  class="buttons001" type="text" id="names0021" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0022" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0023" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0024" 
+    maxlength="1"><br>3. <input  class="buttons002" desabled="desabled" id="names0031" 
+    maxlength="1"><input  class="buttons002" desabled="desabled" id="names0032" 
+    maxlength="1"><input  class="buttons002" desabled="desabled" id="names0033" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0034" 
+    maxlength="1"><br>4. <input  class="buttons002" desabled="desabled" id="names041" 
+    maxlength="1"><input  class="buttons002" desabled="desabled" id="names0042" 
+    maxlength="1"><input  class="buttons002" desabled="desabled" id="names0043" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0044" 
+    maxlength="1"><br>5. <input  class="buttons001" type="text" id="names0051" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0052" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0053" 
+    maxlength="1"><input  class="buttons001" type="text" id="names0054" 
+    maxlength="1"><br><br>
+
+    <button class="buttons003" onClick="parbaude()">Pārbaudīt </button>
+        <br>
+        <br>
+</div>
+<div id="divi">
+    <p>
+    Horizontāli:<br>
+    2. Trešā garākā Latvijas upe.<br>
+    5. Latvijas lielākā pilsēta.<br>
+    Vertikāli:<br>
+    Upe Latvijā uz kuras atrodas slavens ūdenskritums.<br>
+    </p><br><br>
+
+</div>
+</div> 
+    
+</div>
+
+<script>
+
+
+function parbaude(){
+    var w=0;
+var m14=names0014.value;
+var m21=names0021.value;var m22=names0022.value;var m23=names0023.value;var m24=names0024.value;
+var m34=names0034.value;
+var m44=names0044.value;
+var m51=names0051.value;var m52=names0052.value;var m53=names0053.value;var m54=names0054.value;
+console.log(m14);
+    if (m14=="v"){
+document.getElementById("names0014").value="v";
+w++;
+console.log(w);}
+else
+document.getElementById("names0014").value="";
+console.log(m14);
+if (m21=="o"){
+document.getElementById("names0021").value="o";
+w++}
+else
+document.getElementById("names0021").value="";
+if (m22=="g"){
+document.getElementById("names0022").value="g";
+w++;}
+else
+document.getElementById("names0022").value="";
+if (m23=="r"){
+document.getElementById("names0023").value="r";
+w++;}
+else
+document.getElementById("names0023").value="";
+if (m24=="e"){
+document.getElementById("names0024").value="e";
+w++;}
+else
+document.getElementById("names0024").value="";
+if (m34=="n"){
+document.getElementById("names0034").value="n";
+w++;}
+else
+document.getElementById("names0034").value="";
+if (m44=="t"){
+document.getElementById("names0044").value="t";
+w++;}
+else
+document.getElementById("names0044").value="";
+if (m51=="r"){
+document.getElementById("names0051").value="r";
+w++;}
+else
+document.getElementById("names0051").value="";
+if (m52=="ī"){
+document.getElementById("names0052").value="ī";
+w++;}
+else
+document.getElementById("names0052").value="";
+if (m53=="g"){
+document.getElementById("names0053").value="g";
+w++;}
+else
+document.getElementById("names0053").value="";
+if (m54=="a"){
+document.getElementById("names0054").value="a";
+w++;}
+else
+document.getElementById("names0054").value="";
+
+var p = document.createElement("p");
+p.setAttribute("id", "rez");
+var atb="Atminēti "+w+" burti no 11.";
+document.getElementById("divi").appendChild(p);
+document.getElementById("rez").innerHTML=atb;
+
+if (w==11){
+var p1 = document.createElement("p1");
+p1.setAttribute("id", "rez1");
+var atb1="Apsveicu! Mīkla atminēta.";
+document.getElementById("divi").appendChild(p1);
+document.getElementById("rez1").innerHTML=atb1;
+}
+
+}
+
+</script>
+
+
+
+  </body>
+</html>
